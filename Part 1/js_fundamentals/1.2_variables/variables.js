@@ -1,4 +1,4 @@
-let admin,name
-name = 'John'
-admin = name
-alert(admin)
+const ourPlanet = 'Earth'
+let currentVisitor = 'Ramesh Sutaria'
+alert(ourPlanet)
+alert(currentVisitor)
