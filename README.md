@@ -1,4 +1,4 @@
-## [Modern Javascript Tutorial](https://javascript.info/)
+# [Modern Javascript Tutorial](https://javascript.info/)
 
 ## About
 Here I learn JavaScript, starting from scratch and go on to advanced concepts like OOP.
