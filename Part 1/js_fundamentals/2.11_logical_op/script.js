@@ -1,1 +1,3 @@
-alert(null || 2 && 3 || 4)
+if(-1 || 0) alert('first')
+if(-1 && 0) alert('second')
+if(null || -1 && 0) alert('third')
