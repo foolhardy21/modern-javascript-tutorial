@@ -1,6 +1,10 @@
-let result;
-let a=1,b=1;
-(a+b<4)
-? result='Below'
-: result='Over'
-console.log(result)
+let message,login=null;
+
+(login == 'Employee')
+? message = 'Hello'
+: (login == 'Director')
+? message = 'Greetings'
+: (login == '')
+? message = 'No login'
+: message = ''
+console.log(message)
