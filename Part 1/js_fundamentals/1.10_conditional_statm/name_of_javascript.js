@@ -1,5 +1,7 @@
-let name = process.argv[2]
-//console.log('What is the official name of JS?')
-if(name === 'ECMAScript')
-  console.log('Right!')
-else console.log('You dont know? ECMAScript')
+let name = prompt('Enter a number')
+if(+name > 0)
+  alert(1)
+else if(+name<0)
+  alert(-1)
+else if(+name === 0)
+  alert(0)
