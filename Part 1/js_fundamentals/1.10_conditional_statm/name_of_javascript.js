@@ -1,7 +1,6 @@
-let name = prompt('Enter a number')
-if(+name > 0)
-  alert(1)
-else if(+name<0)
-  alert(-1)
-else if(+name === 0)
-  alert(0)
+let result;
+let a=1,b=1;
+(a+b<4)
+? result='Below'
+: result='Over'
+console.log(result)
