@@ -1,6 +1,7 @@
-let age = +prompt('Enter your age','')
-checkAge(age)
+let a = +prompt('Enter a','')
+let b = +prompt('Enter b','')
+getMin(a,b)
 
-function checkAge(age){
-  return age>18 ? true : confirm('Did parents allow you?')
+function getMin(a,b){
+  return a<b ? confirm('a is smaller') : confirm('b is smaller')
 }
