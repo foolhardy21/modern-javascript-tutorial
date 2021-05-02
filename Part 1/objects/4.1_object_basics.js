@@ -1,13 +1,16 @@
-let salaries = {
-  John: 100,
-  Ann: 160,
-  Pete: 130
+let menu = {
+  width: 200,
+  height: 300,
+  title: "My menu"
+};
+
+multiplyNumeric(menu)
+
+function multiplyNumeric(menu) {
+  for(key in menu) {
+    if(typeof(menu[key]) === 'number') {
+      menu[key]*=2
+    }
+  }
+  console.log(menu)
 }
-
-var totalSal = 0
-
-for(key in salaries) {
-    totalSal+=salaries[key]
-}
-
-console.log(totalSal)
