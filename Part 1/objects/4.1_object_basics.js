@@ -1,16 +1,13 @@
-let schedule ={}
-
-console.log( isEmpty(schedule) )
-
-schedule["8:30"] = "get up"
-
-console.log( isEmpty(schedule) )
-
-function isEmpty(schedule) {
-  var counter = 0
-
-  for(var key in schedule){
-    counter++;
-  }
-  return counter === 0 ? true : false
+let salaries = {
+  John: 100,
+  Ann: 160,
+  Pete: 130
 }
+
+var totalSal = 0
+
+for(key in salaries) {
+    totalSal+=salaries[key]
+}
+
+console.log(totalSal)
