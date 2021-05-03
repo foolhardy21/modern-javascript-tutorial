@@ -1,17 +1,17 @@
-var calculator = {
-
-  read() {
-    calculator.val1 = +process.argv[2]
-    calculator.val2 = +process.argv[3]
+var ladder = {
+  step: 0,
+  up() {
+    this.step++
+    return this
   },
-  sum() {
-    return this.val1+this.val2
+  down() {
+    this.step--
+    return this
   },
-  mul() {
-    return this.val1*this.val2
+  showStep: function() {
+    console.log(this.step)
+    return this
   }
 }
 
-calculator.read()
-console.log(calculator.sum())
-console.log(calculator.mul())
+ladder.up().down().down().showStep()
