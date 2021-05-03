@@ -1,12 +1,17 @@
-function makeUser() {
-  return {
-    name: 'John',
-    ref() {
-      return this
-    }
+var calculator = {
+
+  read() {
+    calculator.val1 = +process.argv[2]
+    calculator.val2 = +process.argv[3]
+  },
+  sum() {
+    return this.val1+this.val2
+  },
+  mul() {
+    return this.val1*this.val2
   }
 }
 
-var user = makeUser()
-
-console.log(user.ref().name)
+calculator.read()
+console.log(calculator.sum())
+console.log(calculator.mul())
