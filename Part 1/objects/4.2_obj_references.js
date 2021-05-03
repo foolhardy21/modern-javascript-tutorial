@@ -1,9 +1,14 @@
 var user = {
-  name: 'John'
+  name: 'John',
+  age: 30
 };
 
-var user_copy = user;       //ADDRESS(REFERENCE) IS COPIED AND
-                            //NOT THE OBJECT
+var user_copy = {};            //DIFFERENT ADDRESS
 
-user_copy.name = 'Not John' //ORIGINAL REFERENCE IS UPDATED
-console.log(user.name)
+for(var key in user) {        //REPLICATION INTO NEW OBJECT
+  user_copy[key] = user[key]
+}
+
+user_copy.age = 40
+console.log('original object',user.age)   //NO CHANGE IN ORIGNIAL
+console.log('clone object',user_copy.age)
