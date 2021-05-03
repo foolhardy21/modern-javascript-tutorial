@@ -1,14 +1,18 @@
 var user = {
-  name: 'John',
-  age: 30
-};
-
-var user_copy = {};            //DIFFERENT ADDRESS
-
-for(var key in user) {        //REPLICATION INTO NEW OBJECT
-  user_copy[key] = user[key]
+  name: 'John'
 }
 
-user_copy.age = 40
-console.log('original object',user.age)   //NO CHANGE IN ORIGNIAL
-console.log('clone object',user_copy.age)
+var permission1 = {
+  canView: true
+}
+
+var permission2 = {
+  canEdit: false
+}
+
+console.log(user)
+Object.assign(user,permission1,permission2)
+console.log(user)
+
+//CHANGES IN ORIGINAL DOES NOT AFFECT THE CLONE
+//BECASUE DIFFERENT ADDRESSES 
