@@ -1,10 +1,12 @@
 function makeUser() {
   return {
     name: 'John',
-    ref: this
+    ref() {
+      return this
+    }
   }
 }
 
 var user = makeUser()
 
-console.log(user.ref.name)
+console.log(user.ref().name)
