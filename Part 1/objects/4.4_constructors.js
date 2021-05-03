@@ -1,6 +1,6 @@
 function User(name) {
   this.name = name
-  this.isAdmin = false
+  return {name:'BOBO'}
 }
 
 console.log(new User('Jack'))
