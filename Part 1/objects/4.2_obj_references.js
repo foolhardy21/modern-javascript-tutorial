@@ -1,18 +1,13 @@
 var user = {
-  name: 'John'
-}
+  name: 'John',
+  sizes: {
+    height: 182,
+    width: 50
+  }
+};
 
-var permission1 = {
-  canView: true
-}
-
-var permission2 = {
-  canEdit: false
-}
-
+var clone = {};
+Object.assign(clone,user)
+clone.name = 'Not John'
+clone.sizes.height = 90
 console.log(user)
-Object.assign(user,permission1,permission2)
-console.log(user)
-
-//CHANGES IN ORIGINAL DOES NOT AFFECT THE CLONE
-//BECASUE DIFFERENT ADDRESSES 
