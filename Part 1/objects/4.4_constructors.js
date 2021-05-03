@@ -1,6 +1,13 @@
-function User(name) {
-  this.name = name
-  return {name:'BOBO'}
+var name = {}
+
+function A() {
+  return name
+}
+function B() {
+  return name
 }
 
-console.log(new User('Jack'))
+var a = new A()
+var b = new B()
+
+console.log(a==b)
