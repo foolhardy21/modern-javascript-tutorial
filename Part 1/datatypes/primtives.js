@@ -1,4 +1,4 @@
-'use strict'
+// 'use strict'
 
 let str = 'Hello'
 str.test = 5
