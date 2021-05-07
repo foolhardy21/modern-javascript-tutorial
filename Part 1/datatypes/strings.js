@@ -1,5 +1,5 @@
-const morph = (str) => {
-  return str.toUpperCase()
+const check = (str) => {
+  return str.includes('viagra') || str.includes('xxx')
 }
 
-console.log(morph('foolhardy21'))
+console.log(check('free rabbit'))
