@@ -1,7 +1,3 @@
-const truncate = (str,length) => {
-  if(str.length+1>length) {
-     return str.slice(0,length)
-  }
-}
+const extract = (str) => +str.slice(1)
 
-console.log(truncate('free rabbit',3)+'...')
+console.log(extract('$1234'))
