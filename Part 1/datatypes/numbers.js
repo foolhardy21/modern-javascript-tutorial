@@ -1,3 +1,5 @@
-console.log(3.35.toFixed(1))
-console.log(4.35.toFixed(1))
-console.log(Math.round(4.35*10)/10)
+const random = (num1,num2) => {
+  return Math.floor(Math.random()*(num2+1-num1))+num1
+}
+
+console.log(random(1,10))
