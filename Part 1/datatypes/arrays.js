@@ -1,11 +1,7 @@
-let styles = ['Jazz','Blues']
-console.log(styles)
-styles.push('Rock-n-Roll')
-console.log(styles)
-styles[Math.floor(styles.length/2)] = 'Classics'
-console.log(styles)
-styles.shift()
-console.log(styles)
-styles.unshift('Rap')
-styles.unshift('Reggae')
-console.log(styles)
+let arr = ["a", "b"];
+
+arr.push(function() {
+  console.log( this );
+})
+
+arr[2]();
