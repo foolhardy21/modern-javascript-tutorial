@@ -1,5 +1,7 @@
-const check = (str) => {
-  return str.includes('viagra') || str.includes('xxx')
+const truncate = (str,length) => {
+  if(str.length+1>length) {
+     return str.slice(0,length)
+  }
 }
 
-console.log(check('free rabbit'))
+console.log(truncate('free rabbit',3)+'...')
