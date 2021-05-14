@@ -1,8 +1,21 @@
-let user = {
-  name: "John",
-  years: 30,
+let salaries = {
+  "John": 100,
+  "Pete": 300,
+  "Mary": 250
 };
 
-let {name: name, years: age, isAdmin: isAdmin=false} = user;
+function topSalary(salaries) {
+  let persons = Object.entries(salaries);
+  let maxSal=-1;
+  let maxName=null;
 
-console.log(name,age,isAdmin)
+  for(const [name,sal] of persons) {
+    if(sal>maxSal) {
+      maxSal = sal;
+      maxName=name;
+    }
+  }
+  return maxName;
+}
+
+console.log( topSalary(salaries) )
