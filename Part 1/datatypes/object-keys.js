@@ -1,16 +1,6 @@
-function sumSalaries(salaries) {
+const count = (obj) => Object.keys(obj).length
 
-  let values = Object.values(salaries)
-  console.log(values)
-
-  return values.reduce(function(total,current) {
-    return total+=current;
-  },0)
-  
-}
-
-console.log( sumSalaries({
-  "John": 100,
-  "Pete": 300,
-  "Mary": 250
+console.log( count({
+  name: 'John',
+  age: 30
 }) );
