@@ -5,4 +5,4 @@ function delay(ms) {
   return promise
 }
 
-delay(3000).then(() => console.log('runs after 3 seconds'));
+delay(3000).then((resolve) => console.log('runs after 3 seconds',resolve));
