@@ -1,7 +1,8 @@
-const button = document.querySelector('#hider')
+const menuElem = document.querySelector('#sweeties')
+const titleElem = document.querySelector('.title')
 
-button.addEventListener('click',hideText)
+titleElem.addEventListener('click',openMenu)
 
-function hideText(e) {
-  button.style.display='none'
+function openMenu(e) {
+  menuElem.classList.add('open')
 }
